@@ -26,6 +26,7 @@ public class RoleServiceImpl extends BaseRedisImpl<Role> implements RoleService 
     @Autowired
     private RoleRepository roleRepository;
 
+    // 缓存的使用请参照UserServiceImpl的写法
     public Role findById(Long id) {
         return roleRepository.findOne(id);
     }

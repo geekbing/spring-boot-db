@@ -26,6 +26,7 @@ public class DepartmentServiceImpl extends BaseRedisImpl<Department> implements 
     @Autowired
     private DepartmentRepository departmentRepository;
 
+    // 缓存的使用请参照UserServiceImpl的写法
     public Department findById(Long id) {
         return departmentRepository.findOne(id);
     }
